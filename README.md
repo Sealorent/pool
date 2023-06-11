@@ -1,7 +1,7 @@
 ## Configuration
-Laravel Framework : 10.13.2
-Mysql Version : 10.4.27-MariaDB - mariadb.org binary distribution
-PHP version : 8.1.12 (cli) 
+- Laravel Framework : 10.13.2
+- Mysql Version : 10.4.27-MariaDB - mariadb.org binary distribution
+- PHP version : 8.1.12 (cli) 
 
 ## Installation
 

@@ -1,3 +1,6 @@
+## Docs
+- Pysical Data Model & Activity Diagram : [Click Me !](https://docs.google.com/document/d/1ALkVPO7FcCKCvSw1rb02NmhzGeV-4pUvZ5GIHtA-WqY/edit)
+
 ## Configuration
 - Laravel Framework : 10.13.2
 - Mysql Version : 10.4.27-MariaDB - mariadb.org binary distribution

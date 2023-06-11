@@ -1,0 +1,35 @@
+    .success-gradient{
+        background: linear-gradient(135deg, hsla(100, 40%, 42%, 1) 0%, hsla(131, 95%, 57%, 1) 100%);
+        /* background: linear-gradient(45deg, hsla(100, 8%, 53%, 1) 0%, hsla(131, 100%, 61%, 1) 76%); */
+    }
+    .warning-gradient{
+        background: linear-gradient(225deg, hsla(54, 100%, 50%, 1) 0%, hsla(41, 100%, 50%, 1) 100%);
+    }
+    .danger-gradient{
+        background: linear-gradient(45deg, #f44b4b, #f44b6e, #f44b91, #f44bb4, #f44bd7);
+    }
+    .info-gradient{
+        background: linear-gradient(45deg, #4b4ff4, #4b6ef4, #4b91f4, #4bb4f4, #4bd7f4);
+    }
+    .card-icon{
+        right: 30%;
+        top: 50%;
+        opacity: 0.1;
+    }
+    .icon{
+        font-size: 5rem !important;
+        color: black;
+    }
+    .table-no-padding table > thead > tr > th{
+        color: white !important;
+        font-weight: bolder;
+    }
+    .title{
+        color: white !important;
+    }
+
+    .table-no-padding td, 
+    .table-no-padding th {
+        padding: 3 !important;
+    }
+    

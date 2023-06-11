@@ -22,10 +22,10 @@ Follow these steps to run project locally:
 
 
 User Name & Password :
-    Super Admin : 'email' => 'superadmin@mail.com', 'password' => admin,
-    Manager : 'email' => 'manager@mail.com', 'password' => 'manager',
-    Officer : 'email' => 'officer@mail.com' , 'password' => 'officer',
-    Admin Site : 'email' => 'adminsite@mail.com' , 'password' => 'adminsite1',
+- Super Admin : 'email' => 'superadmin@mail.com', 'password' => admin,
+- Manager : 'email' => 'manager@mail.com', 'password' => 'manager',
+- Officer : 'email' => 'officer@mail.com' , 'password' => 'officer',
+- Admin Site : 'email' => 'adminsite@mail.com' , 'password' => 'adminsite1',
     
     
 

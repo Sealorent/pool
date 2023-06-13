@@ -1,5 +1,6 @@
 @if ( Auth::user()->role_id == 1 || Auth::user()->role_id == 4)
 <script>
+    
     var datatable = $('#usersTable').DataTable({
             processing: true,
             serverSide: true,

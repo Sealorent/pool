@@ -23,13 +23,30 @@
                 {title:'Kendaraan', data: 'vehicle.vehicle_name', name: 'vehicle_name'},
                 {title:'Tanggal Mulai', data: 'start_date', name: 'start_date'},
                 {title:'Tanggal Berakhir', data: 'end_date', name: 'end_date'},
+                {title:'Pemakaian', data:'total_pemakaian', name:'total_pemakaian', visible: false},
                 {title:'BBM', data: 'bbm_consumption', name: 'bbm'},
             ],
             dom: 'Bfrtip',
-            buttons: [
-                'excel'
-            ]
+            buttons: [{
+                extend : 'excel', 
+                // customize : function(excel){
+                //     addExtraColumn(excel)
+                // }
+            }]
         });
+        function addExtraColumn(excel) {
+            console.log(excel);
+            var sheet = excel.xl.worksheets['sheet1.xml'];
+                $('c[r*="G"] t', sheet).text('user table');
+                // $('c[r*="G"] t', sheet).text( 'Custom text' );
+                
+            };
+            // excel.content[1].table.body.forEach(function(row, idx) { 
+            //     let newCell = structuredClone(row[0]);
+            //     newCell.text = idx === 0 ? "New Heading" : "";
+            //     row.push( newCell );
+            //     console.log( row );
+            // })
 </script>
 {{-- @elseif ($role == 2)
 <script>

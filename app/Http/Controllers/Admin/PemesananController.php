@@ -20,11 +20,11 @@ class PemesananController extends Controller
         $this->pemesanan = $pemesanan;
     }
 
-    public function index(Request $request)
+    public function index()
     {
 
         if (request()->ajax()) {
-            $pemesanan = $this->pemesanan->get($request);
+            $pemesanan = $this->pemesanan->get();
             return DataTables::of($pemesanan)
                 ->addIndexColumn()
                 ->addColumn('manager_status', function ($pemesanan) {
@@ -54,6 +54,7 @@ class PemesananController extends Controller
 
     public function create()
     {
+        // return User::where('role_id', 2)->get();
         return view('pages.pemesanan.create', [
             'title' => 'Tambah Pemesanan',
             'vehicles' => Vehicle::whereNotIn('vehicle_status', ['dipakai', 'perbaikan'])->get(),

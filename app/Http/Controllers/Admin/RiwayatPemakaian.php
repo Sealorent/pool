@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Interfaces\PemakaianInterface;
 use App\Models\VehicleUsage;
+use App\Properties\GetTotalUsage as PropertiesGetTotalUsage;
+use GetTotalUsage;
 use Illuminate\Http\Request;
 use Yajra\DataTables\Facades\DataTables;
 
@@ -24,6 +26,9 @@ class RiwayatPemakaian extends Controller
                 ->addIndexColumn()
                 ->addColumn('bbm_consumption', function ($pemakaian) {
                     return $pemakaian->bbm_consumption != null ? $pemakaian->bbm_consumption . ' Liter' : null;
+                })
+                ->addColumn('total_pemakaian', function ($pemakaian) {
+                    return PropertiesGetTotalUsage::getTotalUsage($pemakaian->start_date, $pemakaian->end_date);
                 })
                 ->addColumn('action', function ($pemakaian) {
                     return view('pages.riwayat-pemakaian.partials.action', [
